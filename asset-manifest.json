@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nebula-tech-hub.github.io/static/css/main.baeafc45.css",
+    "main.js": "/nebula-tech-hub.github.io/static/js/main.9d7f5537.js",
+    "static/js/453.c8ae82a8.chunk.js": "/nebula-tech-hub.github.io/static/js/453.c8ae82a8.chunk.js",
+    "index.html": "/nebula-tech-hub.github.io/index.html",
+    "main.baeafc45.css.map": "/nebula-tech-hub.github.io/static/css/main.baeafc45.css.map",
+    "main.9d7f5537.js.map": "/nebula-tech-hub.github.io/static/js/main.9d7f5537.js.map",
+    "453.c8ae82a8.chunk.js.map": "/nebula-tech-hub.github.io/static/js/453.c8ae82a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baeafc45.css",
+    "static/js/main.9d7f5537.js"
+  ]
+}
