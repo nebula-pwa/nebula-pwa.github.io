@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/AboutPage.css'; // Import the CSS file
+import '../styles/AboutPage.css'; // Import the CSS file
 
 function AboutPage() {
   return (
@@ -35,8 +35,10 @@ nebula-tech-hub.github.io/
 │   │   ├── HomePage.css
 │   │   ├── AboutPage.css
 │   │   ├── App.css
+│   │   ├── index.css
 │   ├── App.test.js
 │   ├── App.js
+│   ├── index.js
 │   ├── logo.svg
 │   ├── reportWebVitals.js
 │   ├── setupTests.js
