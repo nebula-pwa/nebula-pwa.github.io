@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* Ensure menu toggle button is positioned correctly */
+  }
+  
+  .navbar .logo {
+    height: 40px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 1rem;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar ul.open {
+      display: flex;
+    }
+  
+    .navbar ul li {
+      margin: 0;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: 1px solid #444;
+    }
+  
+    .navbar ul li:last-child {
+      border-bottom: none;
+    }
+  }
+  
