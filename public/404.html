@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script type="text/javascript">
-      var path = window.location.pathname;
-      if (path !== '/') {
-        var newUrl = '/#' + path.replace(/\/$/, '');
-        window.location.replace(newUrl);
-      }
-    </script>
-    <title>Page Not Found</title>
-  </head>
-  <body>
-    <h1>404: Page Not Found</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script type="text/javascript">
+    // Redirect all requests to index.html for proper React routing
+    var path = window.location.pathname;
+    if (path !== '/') {
+      window.location.replace('/');
+    }
+  </script>
+  <title>Page Not Found</title>
+</head>
+<body>
+  <h1>404: Page Not Found</h1>
+</body>
 </html>
