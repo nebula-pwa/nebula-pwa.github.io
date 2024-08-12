@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=./index.html" />
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=/#/" />
+    <script type="text/javascript">
+      var path = window.location.pathname;
+      var hash = '#' + path;
+      var newUrl = window.location.origin + '/#' + path;
+      window.location.replace(newUrl);
+    </script>
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="./index.html">link to the homepage</a>.</p>
+    <p>Redirecting...</p>
   </body>
 </html>
