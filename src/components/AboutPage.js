@@ -31,6 +31,7 @@ nebula-tech-hub.github.io/
 │   │   ├── Navbar.js
 │   │   ├── HomePage.js
 │   │   ├── AboutPage.js
+│   │   ├── NotFound.js
 │   ├── styles/
 │   │   ├── Navbar.css
 │   │   ├── HomePage.css
