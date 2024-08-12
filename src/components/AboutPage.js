@@ -22,6 +22,7 @@ nebula-tech-hub.github.io/
 │   │   ├── favicon.ico
 │   │   ├── logo192.png
 │   │   ├── logo512.png
+│   ├── 404.html
 │   ├── index.html
 │   ├── manifest.json
 │   ├── robots.txt
