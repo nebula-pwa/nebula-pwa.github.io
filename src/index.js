@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import App from './App';
 import './styles/index.css'; // Import global styles if you have any
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/">
+    <Router>
       <App />
     </Router>
   </React.StrictMode>,
