@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
-import NotFound from './components/NotFound';
+import NotFound from './components/NotFound'; // Ensure you have this component
 import './styles/App.css'; // Global styling
 
 function App() {
