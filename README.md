@@ -1,10 +1,6 @@
-Sure! Here’s the updated README with additional details for PowerShell commands and workflow instructions.
-
----
-
 # Nebula PWA Web
 
-This repository contains the source code for the `nebula-pwa-web` project, a progressive web app (PWA) built with React. The app is designed to be responsive, elegant, and up-to-date with the latest web development trends. This project is deployed on GitHub Pages.
+This repository contains the source code for the `nebula-info-web` project, a web site built with React. This site is to provide information about Nebula PWA. This is designed to be responsive, elegant, and up-to-date with the latest web development trends. This project is deployed on GitHub Pages.
 
 ## Table of Contents
 
@@ -21,17 +17,16 @@ This repository contains the source code for the `nebula-pwa-web` project, a pro
 
 ## Project Overview
 
-`nebula-pwa-web` is a modern PWA that includes multiple pages, a responsive navbar, and customizable components. The goal is to create a seamless user experience across different devices while leveraging the latest web technologies.
+`nebula-info-web` is a modern PWA that includes multiple pages, a responsive navbar, and customizable components. The goal is to create a seamless user experience across different devices while leveraging the latest web technologies.
 
 **Features:**
 - Responsive design with mobile-friendly navigation
 - Multi-page layout with React Router
-- Progressive Web App (PWA) capabilities
 - Deployed on GitHub Pages for easy access
 
 ## Project Structure
 
-Here's an overview of the project's folder structure:
+Here's a little overview of the project's folder structure:
 
 ```
 nebula-tech-hub.github.io/
