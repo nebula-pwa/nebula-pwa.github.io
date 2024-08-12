@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
@@ -8,7 +8,7 @@ import './styles/App.css'; // Global styling
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="content">
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path="*" element={<NotFound />} /> {/* Wildcard route for 404 */}
         </Routes>
       </div>
-    </Router>
+    </>
   );
 }
 
