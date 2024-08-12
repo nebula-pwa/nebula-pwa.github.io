@@ -6,8 +6,11 @@
     <script type="text/javascript">
       // Handle the redirection to maintain correct routing
       var path = window.location.pathname;
-      if (path !== '/') {
+      var hash = '#' + path;
+      if (path !== '/' && path !== '/index.html') {
         window.location.replace('/#' + path);
+      } else {
+        window.location.replace('/');
       }
     </script>
     <title>Page Not Found</title>
