@@ -8,7 +8,7 @@ import './styles/App.css'; // Global styling
 
 function App() {
   return (
-    <Router basename="/">
+    <Router>
       <Navbar />
       <div className="content">
         <Routes>
