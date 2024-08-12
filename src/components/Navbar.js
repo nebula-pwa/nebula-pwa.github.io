@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src="/logo.png" alt="Logo" className="logo" />
+      <img src="/assets/logo192.png" alt="Logo" className="logo" />
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>
