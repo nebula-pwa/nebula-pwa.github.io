@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; url=/" />
     <script type="text/javascript">
-      window.location.replace("/");
+      // Handle the redirection to maintain correct routing
+      var path = window.location.pathname;
+      if (path !== '/') {
+        window.location.replace('/' + path);
+      }
     </script>
     <title>Page Not Found</title>
   </head>
