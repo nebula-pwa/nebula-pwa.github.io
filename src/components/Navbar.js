@@ -9,11 +9,13 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src="/assets/logo192.png" alt="Logo" className="logo" />
+      <div className="navbar-left">
+        <img src="/assets/logo192.png" alt="Logo" className="logo" />
+      </div>
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>
-      <ul className={isOpen ? 'open' : ''}>
+      <ul className={`navbar-right ${isOpen ? 'open' : ''}`}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>

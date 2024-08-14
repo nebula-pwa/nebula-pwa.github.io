@@ -4,8 +4,11 @@ import '../styles/HomePage.css'; // Import the CSS file
 function HomePage() {
   return (
     <div className="homepage">
-      <h1>Welcome to Our Website</h1>
-      <p>This is the home page.</p>
+      <div className="content">
+        <h1>Welcome to Nebula</h1>
+        <p>Your gateway to the stars. Explore the infinite possibilities.</p>
+        <button className="cta-button">Get Started</button>
+      </div>
     </div>
   );
 }
