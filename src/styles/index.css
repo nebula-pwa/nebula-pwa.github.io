@@ -1,5 +1,3 @@
-/* src/styles/index.css */
-
 /* Reset default margin and padding */
 * {
   margin: 0;
@@ -9,10 +7,11 @@
 
 /* Set a base font and color */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(180deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+  color: white;
+  min-height: 100vh;
 }
 
 /* Add some padding and center content */
@@ -20,26 +19,6 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-}
-
-/* Style the Navbar */
-.navbar {
-  background: #000; /* Set the navbar background to black */
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
 }
 
 /* Style the header */
@@ -69,10 +48,10 @@ footer {
 /* Add responsive design */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .navbar a {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 }

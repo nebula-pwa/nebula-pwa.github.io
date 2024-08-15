@@ -2,73 +2,62 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #000; /* Changed to black */
-  color: #fff;
+  padding: 10px 20px;
+  background-color: black; /* Or the desired color */
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
-}
-
-.navbar .logo {
-  height: 40px;
+  gap: 20px;
 }
 
 .navbar-right {
   display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-.navbar-right li {
-  margin-left: 1.5rem;
+.navbar-logo {
+  height: 40px;
+  /* Adjust the size as necessary */
 }
 
-.navbar-right li a {
-  color: #fff;
+.navbar-item {
+  color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 
-.navbar-right li a:hover {
-  text-decoration: underline;
-}
-
-.menu-toggle {
+.navbar-toggle {
   display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: #fff;
   cursor: pointer;
-  padding: 0;
 }
 
+.icon {
+  margin-right: 5px;
+}
+
+/* Media query for mobile view */
 @media (max-width: 768px) {
-  .menu-toggle {
-      display: block;
-  }
-
+  .navbar-left,
   .navbar-right {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: right;
+    display: none;
   }
 
-  .navbar-right.open {
-      display: flex;
+  .navbar-toggle {
+    display: block;
+    flex: 1;
+    text-align: center; /* Center the hamburger menu */
   }
 
-  .navbar-right li {
-      margin: 0;
-      padding: 1rem;
-      border-bottom: 1px solid #444;
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
-  .navbar-right li:last-child {
-      border-bottom: none;
+  .navbar-menu.open {
+    display: flex;
   }
 }

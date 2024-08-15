@@ -18,15 +18,13 @@ nebula-tech-hub.github.io/
 ├── .git/
 ├── node_modules/
 ├── public/
-│   ├── assets/
-│   │   ├── favicon.ico
-│   │   ├── logo192.png
-│   │   ├── logo512.png
 │   ├── 404.html
 │   ├── index.html
 │   ├── manifest.json
 │   ├── robots.txt
 ├── src/
+│   ├── assets/
+│   │   ├── logo192.png
 │   ├── components/
 │   │   ├── Navbar.js
 │   │   ├── HomePage.js
@@ -48,5 +46,6 @@ nebula-tech-hub.github.io/
 ├── package-lock.json
 ├── package.json
 ├── README.md
+
 
 */
