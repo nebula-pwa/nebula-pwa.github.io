@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 /* Reset default margin and padding */
 * {
   margin: 0;
@@ -8,8 +10,8 @@
 /* Set a base font and color */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(180deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+  font-family: 'Righteous', sans-serif;
+  background: linear-gradient(180deg, rgb(0, 16, 46) 48%, rgb(132, 53, 142) 97.8%);
   color: white;
   min-height: 100vh;
 }
@@ -36,7 +38,7 @@ header h1 {
 
 /* Style the footer */
 footer {
-  background: #333;
+  background: #3e0194;
   color: #fff;
   padding: 10px 0;
   text-align: center;

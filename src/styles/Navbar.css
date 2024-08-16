@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: black; /* Or the desired color */
+  background-color: rgb(0, 16, 46); /* Or the desired color */
 }
 
 .navbar-left {
@@ -37,17 +37,49 @@
   margin-right: 5px;
 }
 
+/* Adding a margin between the About and Contact links */
+.navbar-menu a {
+  color: white; /* Set the font color to white */
+  margin-right: 20px; /* Add space between the links */
+}
+
+.navbar-menu a:last-child {
+  margin-right: 0; /* No margin on the last item */
+}
+
+.navbar-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Set the width for the circle */
+  height: 60px; /* Set the height for the circle */
+  background-color: white; /* White background for the circle */
+  border-radius: 50%; /* Make it a circle */
+  overflow: hidden; /* Ensure the logo stays inside the circle */
+}
+
+.navbar-logo {
+  height: 80%; /* Adjust the size of the logo relative to the circle */
+  width: 80%; /* Adjust the size of the logo relative to the circle */
+}
+
 /* Media query for mobile view */
 @media (max-width: 768px) {
-  .navbar-left,
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+
   .navbar-right {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Space between logo and menu */
   }
 
   .navbar-toggle {
     display: block;
-    flex: 1;
-    text-align: center; /* Center the hamburger menu */
+    margin-bottom: 10px; /* Space between logo and hamburger menu */
   }
 
   .navbar-menu {
@@ -60,4 +92,15 @@
   .navbar-menu.open {
     display: flex;
   }
+
+  .navbar-logo-container {
+    width: 50px; /* Adjust size for mobile */
+    height: 50px; /* Adjust size for mobile */
+  }
+
+  .navbar-logo {
+    height: 70%; /* Adjust size of the logo for mobile */
+    width: 70%; /* Adjust size of the logo for mobile */
+  }
 }
+
