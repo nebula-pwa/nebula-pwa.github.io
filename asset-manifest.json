@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8d404fa.css",
-    "main.js": "/static/js/main.dc42d4c5.js",
+    "main.css": "/static/css/main.8831dfa3.css",
+    "main.js": "/static/js/main.f99f8f59.js",
     "static/media/nebula_logo.png": "/static/media/nebula_logo.ca335f135d1274b9f247.png",
     "index.html": "/index.html",
-    "main.d8d404fa.css.map": "/static/css/main.d8d404fa.css.map",
-    "main.dc42d4c5.js.map": "/static/js/main.dc42d4c5.js.map"
+    "main.8831dfa3.css.map": "/static/css/main.8831dfa3.css.map",
+    "main.f99f8f59.js.map": "/static/js/main.f99f8f59.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8d404fa.css",
-    "static/js/main.dc42d4c5.js"
+    "static/css/main.8831dfa3.css",
+    "static/js/main.f99f8f59.js"
   ]
 }
