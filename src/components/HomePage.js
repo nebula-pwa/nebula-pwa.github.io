@@ -6,8 +6,8 @@ function HomePage() {
     <div className="homepage">
       <div className="content">
         <h1>Welcome to Nebula</h1>
-        <p>Your gateway to the stars. Explore the infinite possibilities.</p>
-        <button className="cta-button">Get Started</button>
+        <p>Your gateway to your new place. Explore the infinite possibilities.</p>
+        <button className="cta-button">Download The App</button>
       </div>
     </div>
   );

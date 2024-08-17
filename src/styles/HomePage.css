@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh; /* Make the homepage take up the full viewport height */
   background: linear-gradient(135deg, #320379 0%, #190041 100%); /* Deep purple galaxy gradient */
   color: #fff;
   padding: 1rem;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  overflow: hidden; /* Prevent content from overflowing outside the container */
 }
 
 .homepage .content {
@@ -14,17 +16,22 @@
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   max-width: 90%;
+  width: 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  overflow: auto; /* Allow content to scroll if necessary */
 }
 
 .homepage h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  word-wrap: break-word; /* Prevents long words from overflowing */
 }
 
 .homepage p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  word-wrap: break-word; /* Prevents long words from overflowing */
 }
 
 .homepage .cta-button {
