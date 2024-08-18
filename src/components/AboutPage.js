@@ -24,14 +24,20 @@ nebula-tech-hub.github.io/
 │   ├── robots.txt
 ├── src/
 │   ├── assets/
-│   │   ├── logo192.png
+│   │   ├── nebula_logo.png
+│   │   ├── nebula.ico
+│   │   ├── nebula.jpg
+│   │   ├── nebulaLogo.png
+│   │   ├── nebulaqrcode.png
 │   ├── components/
 │   │   ├── Navbar.js
+│   │   ├── ContactPage.js
 │   │   ├── HomePage.js
 │   │   ├── AboutPage.js
 │   │   ├── NotFound.js
 │   ├── styles/
 │   │   ├── Navbar.css
+│   │   ├── ContactPage.css
 │   │   ├── HomePage.css
 │   │   ├── AboutPage.css
 │   │   ├── App.css
