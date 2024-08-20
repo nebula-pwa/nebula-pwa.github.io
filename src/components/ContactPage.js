@@ -140,7 +140,7 @@ const ContactPage = () => {
         </form>
       )}
 
-      <p>Follow Nebula for more information and updates:</p>
+      <p style={{ marginTop: '1.5rem' }}>Follow Nebula for more information and updates:</p>
       <div className="social-icons">
         <a href="https://www.linkedin.com/company/nebula-software-technology/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />

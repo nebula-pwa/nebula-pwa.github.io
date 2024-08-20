@@ -1,8 +1,15 @@
 .content {
   padding: 1rem;
+  margin: 2rem;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 1.5rem; /* Slightly smaller space on mobile */
+  }
 }

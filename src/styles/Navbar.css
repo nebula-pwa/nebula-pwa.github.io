@@ -4,6 +4,8 @@
   align-items: center;
   padding: 10px 20px;
   background-color: rgb(0, 16, 46); /* Or the desired color */
+
+  z-index: 10;
 }
 
 .navbar-left {

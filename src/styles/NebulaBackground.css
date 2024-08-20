@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b0082; /* Dark purple background as a fallback */
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Responsive design for mobile and tablet sizes */
+  @media (max-width: 768px) {
+    .canvas {
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .canvas {
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  }
+  

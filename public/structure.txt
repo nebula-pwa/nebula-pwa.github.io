@@ -1,30 +1,9 @@
-import React from 'react';
-import NebulaBackground from '../components/NebulaBackground';
-import '../styles/AboutPage.css';
-
-const AboutPage = () => {
-  return (
-    <div className="aboutpage">
-      <NebulaBackground />  {/* Nebula background should be behind everything */}
-      <div className="content">
-        <h1>About Us</h1>
-        <p>This is the about page.</p>
-      </div>
-    </div>
-  );
-};
-
-export default AboutPage;
-
-
-
-/*
-
 nebula-tech-hub.github.io/
 ├── .git/
 ├── node_modules/
 ├── public/
 │   ├── 404.html
+│   ├── structure.txt
 │   ├── index.html
 │   ├── manifest.json
 │   ├── robots.txt
@@ -35,6 +14,8 @@ nebula-tech-hub.github.io/
 │   │   ├── nebula.jpg
 │   │   ├── nebulaLogo.png
 │   │   ├── nebulaqrcode.png
+│   │   ├── nebula-galaxy.png
+│   │   ├── small-nebula-galaxy.jpg
 │   ├── components/
 │   │   ├── Navbar.js
 │   │   ├── ContactPage.js
@@ -58,6 +39,3 @@ nebula-tech-hub.github.io/
 ├── package-lock.json
 ├── package.json
 ├── README.md
-
-
-*/

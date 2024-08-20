@@ -80,7 +80,7 @@
 }
 
 .social-icons a:hover {
-  color: #5f0fcf;
+  color: #a90fcf;
 }
 
 .input-error {
@@ -102,7 +102,7 @@
 .send-another-button {
   background-color: #6a00f4;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   color: #fff;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -111,5 +111,5 @@
 }
 
 .send-another-button:hover {
-  background-color: #5f0fcf;
+  background-color: #990fcf;
 }
