@@ -1,12 +1,14 @@
 .homepage {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Full viewport height */
+  min-height: 50vh; /* Full viewport height */
   background: linear-gradient(10deg, #0F044D 10%, #5010b1 80%); /* Deep purple galaxy gradient */
   color: #fff;
-  border-radius: 2px;
   box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  padding: 20px; /* Padding to prevent content from touching edges */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .homepage .content {
@@ -15,7 +17,8 @@
   background-color: rgba(0, 0, 0, 0.553);
   border-radius: 10px;
   max-width: 600px; /* Set a max-width to prevent the content from becoming too wide */
-  width: 90%; /* Ensure the content takes up most of the screen on mobile but remains within bounds */
+  width: 100%; /* Ensure the content takes up the full width available */
+  margin-bottom: 20px; /* Add margin to separate stacked content */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   box-sizing: border-box; /* Ensure padding is included in the element's total width */
 }
@@ -48,6 +51,11 @@
 }
 
 @media (max-width: 768px) {
+  .homepage .content {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
+    margin-bottom: 15px; /* Reduce margin between content blocks */
+  }
+
   .homepage h1 {
     font-size: 2rem;
   }
