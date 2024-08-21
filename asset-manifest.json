@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d4a2f26.css",
+    "main.css": "/static/css/main.ddaad577.css",
     "main.js": "/static/js/main.bf2b1473.js",
     "static/media/nebula-galaxy.png": "/static/media/nebula-galaxy.f617bb6379a4bdb36428.png",
     "static/media/nebula_logo.png": "/static/media/nebula_logo.ca335f135d1274b9f247.png",
     "index.html": "/index.html",
-    "main.0d4a2f26.css.map": "/static/css/main.0d4a2f26.css.map",
+    "main.ddaad577.css.map": "/static/css/main.ddaad577.css.map",
     "main.bf2b1473.js.map": "/static/js/main.bf2b1473.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d4a2f26.css",
+    "static/css/main.ddaad577.css",
     "static/js/main.bf2b1473.js"
   ]
 }
