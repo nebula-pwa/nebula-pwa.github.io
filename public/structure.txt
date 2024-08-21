@@ -9,6 +9,11 @@ nebula-tech-hub.github.io/
 │   ├── robots.txt
 ├── src/
 │   ├── assets/
+│   │   ├── iphone_step1.jpg
+│   │   ├── iphone_step2.jpg
+│   │   ├── iphone_step3.jpg
+│   │   ├── iphone_step4.jpg
+│   │   ├── iphone_steps.jpg
 │   │   ├── nebula_logo.png
 │   │   ├── nebula.ico
 │   │   ├── nebula.jpg

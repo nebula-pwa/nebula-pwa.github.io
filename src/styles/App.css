@@ -1,15 +1,24 @@
 .content {
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem auto; /* Center the content and reduce the margin */
+  max-width: 1000px; /* Add a max-width to control the width of the content */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Righteous', sans-serif;
 }
 
 @media (max-width: 768px) {
   .content {
     margin-top: 1.5rem; /* Slightly smaller space on mobile */
+    padding: 1rem; /* Ensure padding is consistent on mobile */
   }
 }

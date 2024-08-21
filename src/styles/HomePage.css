@@ -2,24 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Make the homepage take up the full viewport height */
-  background: linear-gradient(135deg, #460b9e 0%, #0f044e 100%); /* Deep purple galaxy gradient */
+  height: 50vh; /* Full viewport height */
+  background: linear-gradient(10deg, #0F044D 10%, #5010b1 80%); /* Deep purple galaxy gradient */
   color: #fff;
-  padding: 1rem;
+  border-radius: 2px;
   box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
-  overflow: hidden; /* Prevent content from overflowing outside the container */
 }
 
 .homepage .content {
   text-align: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.499);
   border-radius: 10px;
-  max-width: 90%;
-  width: 100%;
+  max-width: 600px; /* Set a max-width to prevent the content from becoming too wide */
+  width: 90%; /* Ensure the content takes up most of the screen on mobile but remains within bounds */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   box-sizing: border-box; /* Ensure padding is included in the element's total width */
-  overflow: auto; /* Allow content to scroll if necessary */
 }
 
 .homepage h1 {
@@ -46,7 +44,7 @@
 }
 
 .homepage .cta-button:hover {
-  background-color: #6a00f4; 
+  background-color: #6a00f4;
 }
 
 @media (max-width: 768px) {
