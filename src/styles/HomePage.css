@@ -12,7 +12,7 @@
 .homepage .content {
   text-align: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.499);
+  background-color: rgba(0, 0, 0, 0.553);
   border-radius: 10px;
   max-width: 600px; /* Set a max-width to prevent the content from becoming too wide */
   width: 90%; /* Ensure the content takes up most of the screen on mobile but remains within bounds */
