@@ -16,25 +16,31 @@ nebula-tech-hub.github.io/
 │   │   ├── iphone_step4.jpg
 │   │   ├── iphone_steps.jpg
 │   │   ├── nebula_logo.png
+│   │   ├── nebula-galaxy.png
 │   │   ├── nebula.ico
 │   │   ├── nebula.jpg
 │   │   ├── nebulaLogo.png
 │   │   ├── nebulaqrcode.png
-│   │   ├── nebula-galaxy.png
 │   │   ├── small-nebula-galaxy.jpg
 │   ├── components/
-│   │   ├── Navbar.js
+│   │   ├── AboutPage.js
 │   │   ├── ContactPage.js
 │   │   ├── HomePage.js
-│   │   ├── AboutPage.js
+│   │   ├── HowToInstallPage.js
+│   │   ├── Navbar.js
+│   │   ├── NebulaBackground.js
 │   │   ├── NotFound.js
+│   │   ├── PolicyPage.js
 │   ├── styles/
-│   │   ├── Navbar.css
-│   │   ├── ContactPage.css
-│   │   ├── HomePage.css
 │   │   ├── AboutPage.css
 │   │   ├── App.css
+│   │   ├── ContactPage.css
+│   │   ├── HomePage.css
+│   │   ├── HowToInstallPage.css
 │   │   ├── index.css
+│   │   ├── Navbar.css
+│   │   ├── NebulaBackground.css
+│   │   ├── PolicyPage.css
 │   ├── App.test.js
 │   ├── App.js
 │   ├── index.js
