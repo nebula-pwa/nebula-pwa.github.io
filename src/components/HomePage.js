@@ -6,7 +6,7 @@ function HomePage() {
     
     <div className="homepage">
       <div className="content">
-        <h1>Welcome to Nebula PWA</h1>
+        <h1>Welcome to Nebula PWA's Information Portal</h1>
         <p>Nebula Progressive Web App (PWA) is your gateway to your new place. The revolutionizing the way you search for rental housing. 
           Our progressive web app is designed to streamline the process of finding and securing your next home. 
           Whether you’re looking for a single room or an entire property, 

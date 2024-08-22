@@ -9,6 +9,7 @@ nebula-tech-hub.github.io/
 │   ├── robots.txt
 ├── src/
 │   ├── assets/
+│   │   ├── infographic.jpg
 │   │   ├── iphone_step1.jpg
 │   │   ├── iphone_step2.jpg
 │   │   ├── iphone_step3.jpg

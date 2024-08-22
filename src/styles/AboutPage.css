@@ -42,6 +42,41 @@
   line-height: 1.5;
 }
 
+.aboutpage p a {
+  color: #6709e1; /* Change this to your desired color */
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  text-decoration: none; /* Remove underline if needed */
+}
+
+.aboutpage p a:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+}
+
+.infographic-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some space above the infographic */
+}
+
+.infographic {
+  max-width: 60%; /* Make the image responsive */
+  height: auto;
+  border-radius: 10px; /* Optional: Add some border radius for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+}
+
+.tiny-asterisk {
+  font-size: 0.4rem; /* Make the asterisk very small */
+  vertical-align: super; /* Ensure it aligns correctly as a superscript */
+}
+
+.disclaimer {
+  font-size: 0.65rem; /* Very small text */
+  color: #666; /* Slightly lighter color for the disclaimer */
+  text-align: center;
+  margin-top: 30px; /* Space above the disclaimer */
+}
+
 @media (max-width: 768px) {
   .content {
     padding: 15px;
@@ -58,5 +93,14 @@
   .content p, 
   .content ul li {
     font-size: 1rem;
+  }
+
+  .infographic {
+    max-width: 80%; /* Make the image a bit larger on smaller screens */
+  }
+
+  .disclaimer {
+    font-size: 0.40rem; /* Smaller text on mobile devices */
+    margin-top: 20px; /* Slightly less space above the disclaimer */
   }
 }

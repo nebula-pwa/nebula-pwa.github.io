@@ -1,6 +1,7 @@
 import React from 'react';
 import NebulaBackground from '../components/NebulaBackground';
 import '../styles/AboutPage.css';
+import infographic from '../assets/infographic.jpg'; // Import the infographic image
 
 const AboutPage = () => {
   return (
@@ -10,7 +11,7 @@ const AboutPage = () => {
         <h1>About Us</h1>
         <h2>Transforming the Rental Experience</h2>
         <p>
-          Nebula was born out of the need to combat a saturated rental market that was built without renters in mind.
+        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> was born out of the need to combat a saturated rental market that was built without renters in mind.
           Many platforms prioritize large-scale operations, leaving small landlords and renters—especially college students—struggling with complicated, expensive processes. 
           Nebula changes that by focusing on simplicity, affordability, and efficiency. 
           Our mission is to make the rental process easier for everyone, whether you're listing a property or searching for the perfect room.
@@ -29,7 +30,7 @@ const AboutPage = () => {
           <li><strong>More Flexibility:</strong> You can easily adapt to life changes, whether it's moving to a new city, changing jobs, or upgrading to a bigger space.</li>
         </ul>
         <p>
-          Nebula takes these benefits to the next level by offering a platform designed with the renter’s needs at the forefront, ensuring that the process is as smooth and hassle-free as possible.
+          <a href="https://www.linkedin.com/company/nebula-software-technology" target="_blank" rel="noopener noreferrer">Nebula</a> takes these benefits to the next level by offering a platform designed with the renter’s needs at the forefront, ensuring that the process is as smooth and hassle-free as possible.
         </p>
 
         <h2>What is a PWA?</h2>
@@ -45,7 +46,7 @@ const AboutPage = () => {
 
         <h2>Why Nebula PWA?</h2>
         <p>
-          Nebula PWA offers a powerful, 
+        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> offers a powerful, 
           user-friendly platform for rental housing searches. 
           Unlike traditional rental platforms, Nebula is designed to cater to landlords and specially renters, 
           providing a cost-effective and simple solution for listing and finding properties. 
@@ -59,8 +60,21 @@ const AboutPage = () => {
           <li><strong>Filter:</strong> Use advanced filters to narrow down your search by location, price range, property type, amenities, and more.</li>
           <li><strong>Save:</strong> Bookmark properties you’re interested in and compare them to make informed decisions later.</li>
           <li><strong>Message:</strong> Communicate directly with landlords or renters through the app, eliminating the need for third-party services and making the rental process smooth and efficient.</li>
-          <li><strong>Free Access:</strong> Enjoy all of Nebula’s features at no cost, whether you’re searching for a rental or listing a property.</li>
+          <li><strong>Free Access<sup className="tiny-asterisk">*</sup>:</strong> Enjoy all of Nebula’s features at no cost, whether you’re searching for a rental or listing a property.</li>
         </ul>
+
+        {/* Add the infographic image */}
+        <div className="infographic-container">
+          <img src={infographic} alt="Infographic" className="infographic" />
+        </div>
+
+        {/* Add the disclaimer */}
+        <p className="disclaimer">
+          <sup>*</sup> Nebula provides free services with certain conditions: Free access is available for single users, not companies or people representing organizations or apartment management companies. 
+          Free access is also available for single users who do not share accounts and is limited to one post—either a private or shared room or one property. 
+          Additional features and posting more than one room or property require a subscription.
+        </p>
+
       </div>
     </div>
   );
