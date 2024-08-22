@@ -1,78 +1,95 @@
 import React from 'react';
 import '../styles/HowToInstallPage.css';
-import infographic from '../assets/infographic.jpg';
+import iphone_step1 from '../assets/iphone_step1.jpg';
+import iphone_step2 from '../assets/iphone_step2.jpg';
+import iphone_step3 from '../assets/iphone_step3.jpg';
+import iphone_step4 from '../assets/iphone_step4.jpg';
+import nebulaqrcode from '../assets/nebulaqrcode.png';
 
 const HowToInstallPage = () => {
   return (
     <div className="installpage">
       <div className="content">
-        <h1>About Us</h1>
-        <h2>Transforming the Rental Experience</h2>
+        <h1>Install Nebula PWA on Your Device</h1>
         <p>
-        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> was born out of the need to combat a saturated rental market that was built without renters in mind.
-          Many platforms prioritize large-scale operations, leaving small landlords and renters—especially college students—struggling with complicated, expensive processes. 
-          Nebula changes that by focusing on simplicity, affordability, and efficiency. 
-          Our mission is to make the rental process easier for everyone, whether you're listing a property or searching for the perfect room.
-          Landlords, renters, including college students looking for a room and selling their contract, can easily list their property, private or shared rooms. 
-          Our user-friendly interface makes managing listings a breeze, ensuring that your property reaches the right audience without any hassle.
+          A <a href="https://en.wikipedia.org/wiki/Progressive_web_app" target="_blank" rel="noopener noreferrer">Progressive Web App (PWA)</a> is a web application that uses modern web technologies to provide an app-like experience to users. 
+          PWAs are designed to work on any device with a compatible browser, and they can be installed on a user’s device just like a native app. 
+          The key features of PWAs are their reliability, speed, and ability to work offline. 
+          Nebula’s PWA gives you all the benefits of a native app without the need to download it from an app store.
+        </p>
+        <p>
+          To fully enjoy the power of Nebula PWA and access all its features, it’s essential to install the PWA on your device. 
+          Installing Nebula PWA on your device ensures you get the best experience, with quick access, smoother performance, and the ability to use it even when you’re offline.
+        </p>
+        <h2>How to Install Nebula PWA on Your Device?</h2>
+        <p>
+        Installing <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> on your device is a simple process that varies slightly depending on your device and operating system.
         </p>
           
-        <h2>Why Renting with Nebula is Better than Buying?</h2>
+        <h2>Installing Nebula PWA on iOS</h2>
         <p>
-          Renting offers significant advantages over buying a property, and Nebula is here to make that experience even better. 
+         You can use various browsers on your iOS mobile device, but for the easiest installation experience, we recommend using Safari.
         </p>
         <ul>
-          <li><strong>Spend Less:</strong> Renting allows you to avoid the high upfront costs of purchasing a property, leaving more room in your budget for other priorities.</li>
-          <li><strong>Fewer Headaches:</strong> With renting, there’s no need to worry about property maintenance, repairs, or unexpected costs that come with homeownership.</li>
-          <li><strong>Less Responsibility:</strong> Renting gives you the freedom to move without the long-term commitment and burdens associated with owning a home.</li>
-          <li><strong>More Flexibility:</strong> You can easily adapt to life changes, whether it's moving to a new city, changing jobs, or upgrading to a bigger space.</li>
+          <li>Open the Safari web browser on your iOS mobile device.</li>
+          <li>Visit <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> or scan the QR code below with your mobile device.</li>
+          <li>Once the website loads, tap the Share button at the bottom center of the screen. It resembles a square with an arrow pointing upwards.</li>
+          <figure className="image-container">
+            <img src={iphone_step1} alt="iphone_step1" className="image" />
+          </figure>
+          <li>In the Share menu, locate the “Add to Home Screen” option. Tap on it.</li>
+          <figure className="image-container">
+            <img src={iphone_step2} alt="iphone_step2" className="image" />
+          </figure>
+          <li>Tap the “Add” button in the screen’s upper-right corner.</li>
+          <figure className="image-container">
+            <img src={iphone_step3} alt="iphone_step3" className="image" />
+          </figure>
+          <li>The Nebula app will now be added to your home screen as an app icon.</li>
+          <li>You can launch the Nebula app by tapping its icon like any other app on your device.</li>
+          <figure className="image-container">
+            <img src={iphone_step4} alt="iphone_step4" className="image" />
+          </figure>
         </ul>
-        <p>
-          <a href="https://www.linkedin.com/company/nebula-software-technology" target="_blank" rel="noopener noreferrer">Nebula</a> takes these benefits to the next level by offering a platform designed with the renter’s needs at the forefront, ensuring that the process is as smooth and hassle-free as possible.
-        </p>
 
-        <h2>What is a PWA?</h2>
+        <h2>Installing a PWA on Android</h2>
         <p>
-          A <a href="https://en.wikipedia.org/wiki/Progressive_web_app" target="_blank" rel="noopener noreferrer">Progressive Web App (PWA)</a> is a web-based application that offers a mobile app-like experience directly from your web browser. 
-          Designed to work seamlessly across all devices, PWAs provide offline functionality, push notifications, 
-          and faster load times. Nebula’s PWA gives you all the benefits of a native app without the need to download it from an app store.
+         You can use various browsers on your Android mobile device, but for the easiest installation experience, we recommend using Google Chrome.
         </p>
-        <p>
-          To fully enjoy the power of Nebula and access all its features, it’s essential to install the PWA on your device. 
-          Installing Nebula as a PWA ensures you get the best experience, with quick access, smoother performance, and the ability to use it even when you’re offline.
-        </p>
-
-        <h2>Why Nebula PWA?</h2>
-        <p>
-        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> offers a powerful, 
-          user-friendly platform for rental housing searches. 
-          Unlike traditional rental platforms, Nebula is designed to cater to landlords and specially renters, 
-          providing a cost-effective and simple solution for listing and finding properties. 
-          Say goodbye to the complexities of outdated systems and hello to a new way of renting.
-        </p>
-
-        <h2>Discover the Power of Nebula:</h2>
         <ul>
-          <li><strong>List:</strong> Easily list your property—whether it’s a private room, shared room, or entire unit—with detailed descriptions, photos, and key features to attract the right renters.</li>
-          <li><strong>Search:</strong> Find the perfect rental by browsing through a wide variety of listings tailored to your needs.</li>
-          <li><strong>Filter:</strong> Use advanced filters to narrow down your search by location, price range, property type, amenities, and more.</li>
-          <li><strong>Save:</strong> Bookmark properties you’re interested in and compare them to make informed decisions later.</li>
-          <li><strong>Message:</strong> Communicate directly with landlords or renters through the app, eliminating the need for third-party services and making the rental process smooth and efficient.</li>
-          <li><strong>Free Access<sup className="tiny-asterisk">*</sup>:</strong> Enjoy all of Nebula’s features at no cost, whether you’re searching for a rental or listing a property.</li>
+          <li>Open the Google Chrome browser on your Android mobile device.</li>
+          <li>Visit <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> or scan the QR code below with your mobile device.</li>
+          <li>Once the website loads, tap the Share button at the bottom center of the screen. It resembles a square with an arrow pointing upwards.</li>
+          <figure className="image-container">
+            <img src={iphone_step1} alt="iphone_step1" className="image" />
+          </figure>
+          <li>In the Share menu, locate the “Add to Home Screen” option. Tap on it.</li>
+          <figure className="image-container">
+            <img src={iphone_step2} alt="iphone_step2" className="image" />
+          </figure>
+          <li>Tap the “Add” button in the screen’s upper-right corner.</li>
+          <figure className="image-container">
+            <img src={iphone_step3} alt="iphone_step3" className="image" />
+          </figure>
+          <li>The Nebula app will now be added to your home screen as an app icon.</li>
+          <li>You can launch the Nebula app by tapping its icon like any other app on your device.</li>
+          <figure className="image-container">
+            <img src={iphone_step4} alt="iphone_step4" className="image" />
+          </figure>
         </ul>
-
-        {/* Add the infographic image */}
-        <div className="infographic-container">
-          <img src={infographic} alt="Infographic" className="infographic" />
-        </div>
+        
+        <p>
+          To get started, you can either visit the <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> directly on your mobile device or scan the QR code below with your smartphone.
+        </p>
+        <figure className="image-container">
+          <img src={nebulaqrcode} alt="nebulaqrcode" className="image" />
+        </figure>
 
         {/* Add the disclaimer */}
         <p className="disclaimer">
-          <sup>*</sup> Nebula provides free services with certain conditions: Free access is available for single users, not companies or people representing organizations or apartment management companies. 
-          Free access is also available for single users who do not share accounts and is limited to one post—either a private or shared room or one property. 
-          Additional features and posting more than one room or property require a subscription.
+          <sup>*</sup> Please note that mobile browser technologies and user interfaces are frequently updated, so the steps to add Nebula PWA to your device may vary slightly. 
+          However, the overall process remains the same. If you encounter any issues, don’t hesitate to <a href="https://nebula-tech-hub.github.io/#/contact" target="_blank" rel="noopener noreferrer">contact us</a> for assistance.
         </p>
-
       </div>
     </div>
   );
