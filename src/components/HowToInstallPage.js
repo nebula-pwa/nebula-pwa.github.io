@@ -1,12 +1,10 @@
 import React from 'react';
-import NebulaBackground from '../components/NebulaBackground';
-import '../styles/AboutPage.css';
+import '../styles/HowToInstallPage.css';
 import infographic from '../assets/infographic.jpg';
 
-const AboutPage = () => {
+const HowToInstallPage = () => {
   return (
-    <div className="aboutpage">
-      <NebulaBackground /> {/* Nebula background should be behind everything */}
+    <div className="installpage">
       <div className="content">
         <h1>About Us</h1>
         <h2>Transforming the Rental Experience</h2>
@@ -80,4 +78,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default HowToInstallPage;

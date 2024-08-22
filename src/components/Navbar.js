@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaInfoCircle, FaEnvelope } from 'react-icons/fa'; // Import icons
+import { FaBars, FaInfoCircle, FaEnvelope, FaBook } from 'react-icons/fa'; // Import icons
+import { MdInstallMobile } from "react-icons/md";
 import '../styles/Navbar.css';
 import logo from '../assets/nebula_logo.png';
 
@@ -25,6 +26,14 @@ const Navbar = () => {
         <FaBars />
       </div>
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
+      <Link to="/install">
+          <MdInstallMobile className="icon" />
+          How to Install
+        </Link>
+        <Link to="/terms">
+          <FaBook className="icon" />
+          Terms & Privacy Policy
+        </Link>
         <Link to="/about">
           <FaInfoCircle className="icon" />
           About
