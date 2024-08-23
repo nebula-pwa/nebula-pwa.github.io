@@ -7,6 +7,8 @@ import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../firebaseConfig'; // Firebase import
 
 function HomePage() {
+
+  
   const handleButtonClick = () => {
     const timestamp = new Date();
 
