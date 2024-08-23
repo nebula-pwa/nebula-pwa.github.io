@@ -19,6 +19,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   box-sizing: border-box; /* Ensure padding is included in the element's total width */
   overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+  word-wrap: break-word; /* Ensure long words break to avoid overflow */
 }
 
 .content h1,
@@ -41,15 +42,27 @@
 .content ul li {
   margin-bottom: 10px;
   line-height: 1.5;
+  word-wrap: break-word; /* Ensure long list item text breaks to avoid overflow */
 }
 
-.aboutpage p a {
+.content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content ol li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  word-wrap: break-word; /* Ensure long list item text breaks to avoid overflow */
+}
+
+.content p a {
   color: #6709e1; /* Change this to your desired color */
   font-size: 1.1rem; /* Adjust the font size as needed */
   text-decoration: none; /* Remove underline if needed */
 }
 
-.aboutpage p a:hover {
+.content p a:hover {
   text-decoration: underline; /* Add underline on hover if desired */
 }
 
@@ -67,7 +80,8 @@
   }
 
   .content p, 
-  .content ul li {
+  .content ul li, 
+  .content ol li {
     font-size: 0.9rem; /* Slightly smaller font size */
   }
 }
