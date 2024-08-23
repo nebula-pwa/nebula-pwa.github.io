@@ -22,12 +22,17 @@ const CookieConsent = ({ onConsent }) => {
     });
   };
 
+  const handleReject = () => {
+    localStorage.setItem('cookieConsent', 'false');
+    onConsent();
+  };
+
   return (
     <div className="cookie-consent">
       <p>We use cookies and other tracking technologies to improve your browsing experience on our website. By accepting, you consent to our use of these technologies.</p>
       <div className="cookie-consent-buttons">
         <button onClick={handleAccept}>Accept</button>
-        <button>Reject</button>
+        <button onClick={handleReject}>Reject</button>
       </div>
     </div>
   );

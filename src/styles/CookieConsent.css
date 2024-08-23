@@ -2,46 +2,45 @@
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background: rgba(51, 51, 51, 0.4); /* Glass-like transparent background */
+  background: rgba(0, 0, 0, 0.3); /* Crystal glass effect with black tint */
   color: #fff;
   padding: 15px 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(10, 10, 10, 0.497);
+  border-radius: 14px; /* Adjusted for a more rounded look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Light shadow for better contrast */
   z-index: 1000;
   display: flex;
-  flex-direction: column; /* Stack text and buttons vertically */
-  align-items: flex-start; /* Align text to the left */
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 300px;
   box-sizing: border-box;
   backdrop-filter: blur(10px); /* Apply blur for glass effect */
 }
 
 .cookie-consent p {
-  margin: 0 0 10px 0; /* Margin below the text */
-  font-size: 0.8rem; /* Smaller font size */
+  margin: 0 0 10px 0;
+  font-size: 0.9rem; /* Slightly smaller font size for better balance */
 }
 
 .cookie-consent-buttons {
   display: flex;
   width: 100%;
-  justify-content: flex-end; /* Align buttons to the right */
-  border-radius: 40px;
+  justify-content: flex-end;
 }
 
 .cookie-consent button {
-  background: linear-gradient(45deg, #a013ec, #3333ff); /* Gradient background for better roundness */
+  background: transparent; /* Transparent background for buttons */
   color: #fff;
-  border: none; /* Remove the border to avoid interference with roundness */
+  border: 2px solid; /* Gradient border */
+  background: linear-gradient(45deg, #7204ad, #3333ff); /* Gradient border on hover */
   padding: 8px 15px;
   cursor: pointer;
   border-radius: 15px; /* Fully rounded corners for buttons */
-  transition: background 0.3s ease;
   margin-left: 10px;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .cookie-consent button:hover {
-  background: linear-gradient(45deg, #ff00cc, #3333ff);
-  color: #fff;
+  background: linear-gradient(45deg, #ff00cc, #3333ff); /* Gradient border on hover */
 }
 
 @media (max-width: 768px) {

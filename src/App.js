@@ -11,13 +11,13 @@ import './styles/App.css';
 import CookieConsent from './components/CookieConsent'; // Import the CookieConsent component
 
 function App() {
-
-  
   const [consentGiven, setConsentGiven] = useState(false);
 
   useEffect(() => {
     const consent = localStorage.getItem('cookieConsent');
-    if (consent) {
+    if (consent === 'true') {
+      setConsentGiven(true);
+    } else if (consent === 'false') {
       setConsentGiven(true);
     }
   }, []);
