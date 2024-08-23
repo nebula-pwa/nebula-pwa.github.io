@@ -25,6 +25,8 @@ function App() {
   return (
     <>
       {!consentGiven && <CookieConsent onConsent={() => setConsentGiven(true)} />}
+      
+      
       <Navbar />
       <div className="content">
         <Routes>
