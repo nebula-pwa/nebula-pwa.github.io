@@ -1,18 +1,30 @@
-// export default App;
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HomeToInstallPage from './components/HowToInstallPage.js';
-import PolicyPage from './components/PolicyPage.js';
+import HomeToInstallPage from './components/HowToInstallPage';
+import PolicyPage from './components/PolicyPage';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
-import NotFound from './components/NotFound'; 
-import './styles/App.css'; 
+import NotFound from './components/NotFound';
+import './styles/App.css';
+import CookieConsent from './components/CookieConsent'; // Import the CookieConsent component
 
 function App() {
+
+  
+  const [consentGiven, setConsentGiven] = useState(false);
+
+  useEffect(() => {
+    const consent = localStorage.getItem('cookieConsent');
+    if (consent) {
+      setConsentGiven(true);
+    }
+  }, []);
+
   return (
     <>
+      {!consentGiven && <CookieConsent onConsent={() => setConsentGiven(true)} />}
       <Navbar />
       <div className="content">
         <Routes>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import nebulaBackground from '../assets/nebula-galaxy.png'; // Import the background image
+//import nebulaBackground from '../assets/nebula-galaxy.png'; // Import the background image
 
 const NebulaBackground = ({ 
   speedFactor = 0.05, 
