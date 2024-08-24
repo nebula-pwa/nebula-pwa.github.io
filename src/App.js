@@ -5,7 +5,7 @@ import HomeToInstallPage from './components/HowToInstallPage';
 import PolicyPage from './components/PolicyPage';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
-import ContactPage from './components/ContactPage2';
+import ContactPage from './components/ContactPage';
 import NotFound from './components/NotFound';
 import './styles/App.css';
 import CookieConsent from './components/CookieConsent'; // Import the CookieConsent component

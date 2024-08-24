@@ -18,7 +18,18 @@ const ContactPage = () => {
     errors: {},
   });
 
-  // Function to validate the form inputs
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleInputFocus = (name) => {
+    setFormState(prevState => ({
+      ...prevState,
+      errors: { ...prevState.errors, [name]: '' }
+    }));
+  };
+
   const validateForm = (values) => {
     let errors = {};
 
@@ -38,23 +49,12 @@ const ContactPage = () => {
     return errors;
   };
 
-  // Handle input changes
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
-  };
-
-  // Handle form submission
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    // Validate form inputs
     let errors = validateForm(formValues);
 
     if (Object.keys(errors).length === 0) {
-      console.log("Sending the following data:", formValues);  // Debugging step
-
-      // Map form values to match EmailJS template keys
       const templateParams = {
         from_name: formValues.firstName,
         from_lastname: formValues.lastName,
@@ -62,17 +62,14 @@ const ContactPage = () => {
         message: formValues.message,
       };
 
-      // No errors, proceed with sending the email
       emailjs.send('service_as2i5q9', 'template_cdvo85a', templateParams, 'r8cBQEI9j_RU5axeJ')
         .then((response) => {
-          console.log('SUCCESS!', response.status, response.text);
           setFormState({
             successMessage: 'Thank you for contacting us. We will be in touch as soon as possible.',
             showForm: false,
             errors: {},
           });
         }, (error) => {
-          console.log('FAILED...', error);
           alert('Failed to send the message, please try again.');
         });
     } else {
@@ -97,44 +94,56 @@ const ContactPage = () => {
 
       {!formState.successMessage && formState.showForm && (
         <form onSubmit={handleFormSubmit} className="contact-form">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="First Name"
-            value={formValues.firstName}
-            onChange={handleInputChange}
-            className={formState.errors.firstName ? 'input-error' : ''}
-          />
-          {formState.errors.firstName && <span className="error-text">{formState.errors.firstName}</span>}
+          <div className="input-container">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              value={formValues.firstName}
+              onChange={handleInputChange}
+              onFocus={() => handleInputFocus('firstName')}
+              className={formState.errors.firstName ? 'input-error' : ''}
+            />
+            {formState.errors.firstName && <span className="error-text">{formState.errors.firstName}</span>}
+          </div>
           
-          <input
-            type="text"
-            name="lastName"
-            placeholder="Last Name"
-            value={formValues.lastName}
-            onChange={handleInputChange}
-            className={formState.errors.lastName ? 'input-error' : ''}
-          />
-          {formState.errors.lastName && <span className="error-text">{formState.errors.lastName}</span>}
+          <div className="input-container">
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              value={formValues.lastName}
+              onChange={handleInputChange}
+              onFocus={() => handleInputFocus('lastName')}
+              className={formState.errors.lastName ? 'input-error' : ''}
+            />
+            {formState.errors.lastName && <span className="error-text">{formState.errors.lastName}</span>}
+          </div>
           
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formValues.email}
-            onChange={handleInputChange}
-            className={formState.errors.email ? 'input-error' : ''}
-          />
-          {formState.errors.email && <span className="error-text">{formState.errors.email}</span>}
+          <div className="input-container">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formValues.email}
+              onChange={handleInputChange}
+              onFocus={() => handleInputFocus('email')}
+              className={formState.errors.email ? 'input-error' : ''}
+            />
+            {formState.errors.email && <span className="error-text">{formState.errors.email}</span>}
+          </div>
           
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={formValues.message}
-            onChange={handleInputChange}
-            className={formState.errors.message ? 'input-error' : ''}
-          ></textarea>
-          {formState.errors.message && <span className="error-text">{formState.errors.message}</span>}
+          <div className="input-container">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              value={formValues.message}
+              onChange={handleInputChange}
+              onFocus={() => handleInputFocus('message')}
+              className={formState.errors.message ? 'input-error' : ''}
+            ></textarea>
+            {formState.errors.message && <span className="error-text">{formState.errors.message}</span>}
+          </div>
           
           <button type="submit" className="send-button">Send</button>
         </form>
