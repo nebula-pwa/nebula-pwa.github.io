@@ -19,7 +19,7 @@ const Navbar = () => {
     if (isOpen) {
       timer = setTimeout(() => {
         setIsOpen(false);
-      }, 30000); // 30 seconds
+      }, 20000); // 20 seconds
     }
     return () => clearTimeout(timer);
   }, [isOpen]);
