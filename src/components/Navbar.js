@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaInfoCircle, FaEnvelope, FaBook } from 'react-icons/fa';
+import { FaInfoCircle, FaEnvelope, FaBook } from 'react-icons/fa';
+import { GrClose } from "react-icons/gr";
 import { MdInstallMobile } from "react-icons/md";
 import '../styles/Navbar.css';
 import logo from '../assets/nebula_logo.png';
@@ -13,6 +14,16 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    let timer;
+    if (isOpen) {
+      timer = setTimeout(() => {
+        setIsOpen(false);
+      }, 30000); // 30 seconds
+    }
+    return () => clearTimeout(timer);
+  }, [isOpen]);
+
   const isActive = (path) => location.pathname === path;
 
   return (
@@ -24,8 +35,13 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className="navbar-toggle" onClick={toggleMenu}>
-        <FaBars />
+      <div className={`navbar-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <GrClose className="close-icon" />
       </div>
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <Link to="/install" className={isActive('/install') ? 'active' : ''}>

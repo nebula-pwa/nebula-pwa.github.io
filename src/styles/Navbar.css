@@ -1,129 +1,211 @@
 .navbar {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensures the navbar stays on top of other content */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(0, 16, 46); /* Or the desired color */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(0, 16, 46); /* Or the desired color */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  /* Adjust the size as necessary */
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Adding a margin between the About and Contact links */
+.navbar-menu a {
+  color: white; /* Set the font color to white */
+  margin-right: 20px; /* Add space between the links */
+}
+
+.navbar-menu a:last-child {
+  margin-right: 0; /* No margin on the last item */
+}
+
+.navbar-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Set the width for the circle */
+  height: 50px; /* Set the height for the circle */
+  background-color: white; /* White background for the circle */
+  border-radius: 50%; /* Make it a circle */
+  overflow: hidden; /* Ensure the logo stays inside the circle */
+}
+
+.navbar-logo-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-logo {
+  height: 80%; /* Adjust the size of the logo relative to the circle */
+  width: 80%; /* Adjust the size of the logo relative to the circle */
+}
+
+.navbar-menu a.active {
+  color: rgb(125, 14, 222); /* Replace with your desired highlight color */
+  font-weight: bold; /* Optional: make the text bold when active */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    width: 100%; /* Ensure full width */
   }
-  
-  .navbar-left {
+
+  .navbar-right {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Space between logo and menu */
+  }
+
+  .navbar-toggle {
+    display: block;
+    margin-bottom: 10px; /* Space between logo and hamburger menu */
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    height: 40px;
-    /* Adjust the size as necessary */
-  }
-  
-  .navbar-item {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar-toggle {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .icon {
-    margin-right: 5px;
-  }
-  
-  /* Adding a margin between the About and Contact links */
+
   .navbar-menu a {
-    color: white; /* Set the font color to white */
-    margin-right: 20px; /* Add space between the links */
+    margin-right: 0; /* Remove right margin in mobile view */
+    text-align: center; /* Center the text */
   }
-  
-  .navbar-menu a:last-child {
-    margin-right: 0; /* No margin on the last item */
+
+  .navbar-menu.open {
+    display: flex;
   }
-  
+
   .navbar-logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Set the width for the circle */
-    height: 50px; /* Set the height for the circle */
-    background-color: white; /* White background for the circle */
-    border-radius: 50%; /* Make it a circle */
-    overflow: hidden; /* Ensure the logo stays inside the circle */
+    width: 50px; /* Adjust size for mobile */
+    height: 50px; /* Adjust size for mobile */
   }
-  
-  .navbar-logo-container a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
+
   .navbar-logo {
-    height: 80%; /* Adjust the size of the logo relative to the circle */
-    width: 80%; /* Adjust the size of the logo relative to the circle */
+    height: 70%; /* Adjust size of the logo for mobile */
+    width: 70%; /* Adjust size of the logo for mobile */
+  }
+}
+
+/* New styles for hamburger menu animation */
+.navbar-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 20px;
+}
+
+.hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
+.close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 24px;
+}
+
+.navbar-toggle.open .hamburger span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.navbar-toggle.open .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.open .hamburger span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.navbar-toggle.open .close-icon {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.navbar-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    max-height: 0;
+    overflow: hidden;
   }
 
-  .navbar-menu a.active {
-    color: rgb(125, 14, 222); /* Replace with your desired highlight color */
-    font-weight: bold; /* Optional: make the text bold when active */
+  .navbar-menu.open {
+    max-height: 300px; /* Adjust this value based on your content */
   }
-  
-  /* Media query for mobile view */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center; /* Center content horizontally */
-      width: 100%; /* Ensure full width */
-    }
-  
-    .navbar-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px; /* Space between logo and menu */
-    }
-  
-    .navbar-toggle {
-      display: block;
-      margin-bottom: 10px; /* Space between logo and hamburger menu */
-    }
-  
-    .navbar-menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .navbar-menu a {
-      margin-right: 0; /* Remove right margin in mobile view */
-      text-align: center; /* Center the text */
-    }
-  
-    .navbar-menu.open {
-      display: flex;
-    }
-  
-    .navbar-logo-container {
-      width: 50px; /* Adjust size for mobile */
-      height: 50px; /* Adjust size for mobile */
-    }
-  
-    .navbar-logo {
-      height: 70%; /* Adjust size of the logo for mobile */
-      width: 70%; /* Adjust size of the logo for mobile */
-    }
-  }
-  
+}
