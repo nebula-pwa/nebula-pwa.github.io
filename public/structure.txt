@@ -25,6 +25,7 @@ nebula-tech-hub.github.io/
 │   ├── components/
 │   │   ├── AboutPage.js
 │   │   ├── ContactPage.js
+│   │   ├── CookieConsent.js
 │   │   ├── HomePage.js
 │   │   ├── HowToInstallPage.js
 │   │   ├── Navbar.js
@@ -35,6 +36,7 @@ nebula-tech-hub.github.io/
 │   │   ├── AboutPage.css
 │   │   ├── App.css
 │   │   ├── ContactPage.css
+│   │   ├── CookieConsent.css
 │   │   ├── HomePage.css
 │   │   ├── HowToInstallPage.css
 │   │   ├── index.css
@@ -43,6 +45,7 @@ nebula-tech-hub.github.io/
 │   │   ├── PolicyPage.css
 │   ├── App.test.js
 │   ├── App.js
+│   ├── firebaseConfig.js
 │   ├── index.js
 │   ├── logo.svg
 │   ├── reportWebVitals.js

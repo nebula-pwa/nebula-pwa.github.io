@@ -4,6 +4,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { logEvent } from 'firebase/analytics';
 import '../styles/CookieConsent.css';
 
+
 const CookieConsent = ({ onConsent }) => {
   const handleAccept = async () => {
     localStorage.setItem('cookieConsent', 'true');

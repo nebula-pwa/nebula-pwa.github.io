@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../styles/ContactPage.css';
 import { FaLinkedin, FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
+import { BsTwitterX } from "react-icons/bs";
 import { validateEmail, validateRequired } from '../utils/formValidations';
 
 const ContactPage = () => {
@@ -153,6 +154,9 @@ const ContactPage = () => {
       <div className="social-icons">
         <a href="https://www.linkedin.com/company/nebula-software-technology/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
+        </a>
+        <a href="https://x.com/nebulatechspace" target="_blank" rel="noopener noreferrer">
+          <BsTwitterX />
         </a>
         <a href="https://www.tiktok.com/@nebula.software.company?_t=8oxBiAZJfAt&_r=1" target="_blank" rel="noopener noreferrer">
           <FaTiktok />

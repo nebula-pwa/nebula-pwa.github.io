@@ -93,7 +93,7 @@
   }
   
   .send-button {
-    background-color: #229ca7;
+    background: linear-gradient(50deg, #260ac3 10%, #810cd5 80%); /* Deep purple galaxy gradient */
     border: none;
     padding: 0.75rem 1.5rem;
     color: #fff;
@@ -105,7 +105,7 @@
   }
   
   .send-button:hover {
-    background-color: #5f0fcf;
+    background: linear-gradient(1deg,#810cd5 5%, #400fe1 90%); 
   }
   
   .social-icons {

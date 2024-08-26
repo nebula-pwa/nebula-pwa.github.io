@@ -6,9 +6,12 @@ import iphone_step3 from '../assets/iphone_step3.jpg';
 import iphone_step4 from '../assets/iphone_step4.jpg';
 import nebulaqrcode from '../assets/nebulaqrcode.png';
 
+import NebulaBackground from '../components/NebulaBackground';
+
 const HowToInstallPage = () => {
   return (
     <div className="installpage">
+      <NebulaBackground /> {/* Nebula background should be behind everything */}
       <div className="content">
         <h1>Install Nebula PWA on Your Device</h1>
         <p>

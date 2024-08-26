@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/PolicyPage.css';
 
+import NebulaBackground from '../components/NebulaBackground';
+
 const PolicyPage = () => {
 
   // Get the current date
@@ -12,6 +14,7 @@ const PolicyPage = () => {
 
   return (
     <div className="policypage">
+      <NebulaBackground /> {/* Nebula background should be behind everything */}
       <div className="content">
         <h1>Nebula Terms of Service & Privacy Policy</h1>
         
