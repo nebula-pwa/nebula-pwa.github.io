@@ -1,7 +1,8 @@
 // src/components/HomePage.js
-
 import React from 'react';
 import '../styles/HomePage.css';
+
+import NebulaBackground from '../components/NebulaBackground';
 
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../firebaseConfig'; // Firebase import
@@ -26,6 +27,7 @@ function HomePage() {
 
   return (
     <div className="homepage">
+      <NebulaBackground /> {/* Nebula background should be behind everything */}
       <div className="content">
         <h1>Welcome to Nebula PWA's Information Portal</h1>
         <p>Nebula Progressive Web App (PWA) is your gateway to your new place. The revolutionizing the way you search for rental housing. 
