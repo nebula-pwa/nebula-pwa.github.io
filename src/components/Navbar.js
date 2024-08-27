@@ -8,7 +8,9 @@ import logo from '../assets/nebula_logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const location = useLocation();
+  let lastScrollY = 0;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,10 +26,27 @@ const Navbar = () => {
     return () => clearTimeout(timer);
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="navbar-right">
         <div className="navbar-logo-container">
           <Link to="/">

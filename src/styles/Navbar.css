@@ -1,13 +1,23 @@
 .navbar {
-  position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(0, 16, 46); /* Or the desired color */
+  background-color: rgba(0, 16, 46, 0.849);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar.visible {
+  transform: translateY(0);
 }
 
 .navbar-left {
@@ -78,6 +88,10 @@
 .navbar-menu a.active {
   color: rgb(125, 14, 222); /* Replace with your desired highlight color */
   font-weight: bold; /* Optional: make the text bold when active */
+}
+
+.main-content {
+  margin-top: 60px; /* Adjust this to match your navbar height */
 }
 
 /* Media query for mobile view */
