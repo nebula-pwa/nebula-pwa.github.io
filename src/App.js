@@ -10,6 +10,9 @@ import NotFound from './components/NotFound';
 import './styles/App.css';
 import CookieConsent from './components/CookieConsent'; // Import the CookieConsent component
 
+import Footer from './components/Footer.js';
+
+
 function App() {
   const [consentGiven, setConsentGiven] = useState(false);
 
@@ -38,6 +41,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+
+      <Footer /> {/* Add the Footer component here */}
     </>
   );
 }
