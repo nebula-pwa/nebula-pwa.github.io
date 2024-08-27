@@ -5,6 +5,8 @@ import { FaLinkedin, FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 import { validateEmail, validateRequired } from '../utils/formValidations';
 
+import NebulaBackground from '../components/NebulaBackground';
+
 const ContactPage = () => {
   const [formValues, setFormValues] = useState({
     firstName: '',
@@ -79,6 +81,10 @@ const ContactPage = () => {
   };
 
   return (
+    <div className="container">
+
+    <NebulaBackground /> {/* */}
+    
     <div className="contact-page">
       <h1>Contact Us</h1>
       <p>Have questions or inquiries?</p>
@@ -168,6 +174,7 @@ const ContactPage = () => {
           <FaInstagram />
         </a>
       </div>
+    </div>
     </div>
   );
 };
