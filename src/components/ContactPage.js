@@ -83,98 +83,98 @@ const ContactPage = () => {
   return (
     <div className="container">
 
-    <NebulaBackground /> {/* */}
-    
-    <div className="contact-page">
-      <h1>Contact Us</h1>
-      <p>Have questions or inquiries?</p>
-      <p>Send us a message. We're here to help!</p>
+      <NebulaBackground /> {/* */}
+      
+      <div className="contact-page">
+        <h1>Contact Us</h1>
+        <p>Have questions or inquiries?</p>
+        <p>Send us a message. We're here to help!</p>
 
-      {formState.successMessage && (
-        <>
-          <p className="success-message">{formState.successMessage}</p>
-          <button className="send-another-button" onClick={() => setFormState({ showForm: true, successMessage: '', errors: {} })}>
-            Send another message
-          </button>
-        </>
-      )}
+        {formState.successMessage && (
+          <>
+            <p className="success-message">{formState.successMessage}</p>
+            <button className="send-another-button" onClick={() => setFormState({ showForm: true, successMessage: '', errors: {} })}>
+              Send another message
+            </button>
+          </>
+        )}
 
-      {!formState.successMessage && formState.showForm && (
-        <form onSubmit={handleFormSubmit} className="contact-form">
-          <div className="input-container">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={formValues.firstName}
-              onChange={handleInputChange}
-              onFocus={() => handleInputFocus('firstName')}
-              className={formState.errors.firstName ? 'input-error' : ''}
-            />
-            {formState.errors.firstName && <span className="error-text">{formState.errors.firstName}</span>}
-          </div>
-          
-          <div className="input-container">
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={formValues.lastName}
-              onChange={handleInputChange}
-              onFocus={() => handleInputFocus('lastName')}
-              className={formState.errors.lastName ? 'input-error' : ''}
-            />
-            {formState.errors.lastName && <span className="error-text">{formState.errors.lastName}</span>}
-          </div>
-          
-          <div className="input-container">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formValues.email}
-              onChange={handleInputChange}
-              onFocus={() => handleInputFocus('email')}
-              className={formState.errors.email ? 'input-error' : ''}
-            />
-            {formState.errors.email && <span className="error-text">{formState.errors.email}</span>}
-          </div>
-          
-          <div className="input-container">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formValues.message}
-              onChange={handleInputChange}
-              onFocus={() => handleInputFocus('message')}
-              className={formState.errors.message ? 'input-error' : ''}
-            ></textarea>
-            {formState.errors.message && <span className="error-text">{formState.errors.message}</span>}
-          </div>
-          
-          <button type="submit" className="send-button">Send</button>
-        </form>
-      )}
+        {!formState.successMessage && formState.showForm && (
+          <form onSubmit={handleFormSubmit} className="contact-form">
+            <div className="input-container">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={formValues.firstName}
+                onChange={handleInputChange}
+                onFocus={() => handleInputFocus('firstName')}
+                className={formState.errors.firstName ? 'input-error' : ''}
+              />
+              {formState.errors.firstName && <span className="error-text">{formState.errors.firstName}</span>}
+            </div>
+            
+            <div className="input-container">
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={formValues.lastName}
+                onChange={handleInputChange}
+                onFocus={() => handleInputFocus('lastName')}
+                className={formState.errors.lastName ? 'input-error' : ''}
+              />
+              {formState.errors.lastName && <span className="error-text">{formState.errors.lastName}</span>}
+            </div>
+            
+            <div className="input-container">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formValues.email}
+                onChange={handleInputChange}
+                onFocus={() => handleInputFocus('email')}
+                className={formState.errors.email ? 'input-error' : ''}
+              />
+              {formState.errors.email && <span className="error-text">{formState.errors.email}</span>}
+            </div>
+            
+            <div className="input-container">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                value={formValues.message}
+                onChange={handleInputChange}
+                onFocus={() => handleInputFocus('message')}
+                className={formState.errors.message ? 'input-error' : ''}
+              ></textarea>
+              {formState.errors.message && <span className="error-text">{formState.errors.message}</span>}
+            </div>
+            
+            <button type="submit" className="send-button">Send</button>
+          </form>
+        )}
 
-      <p style={{ marginTop: '1.5rem' }}>Follow Nebula for more information and updates:</p>
-      <div className="social-icons">
-        <a href="https://www.linkedin.com/company/nebula-software-technology/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </a>
-        <a href="https://x.com/nebulatechspace" target="_blank" rel="noopener noreferrer">
-          <BsTwitterX />
-        </a>
-        <a href="https://www.tiktok.com/@nebula.software.company?_t=8oxBiAZJfAt&_r=1" target="_blank" rel="noopener noreferrer">
-          <FaTiktok />
-        </a>
-        <a href="https://www.facebook.com/share/4z39Hw2UkzYcWzyQ/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
-          <FaFacebook />
-        </a>
-        <a href="https://www.instagram.com/nebula.software.solutions?igsh=OHR3enJ5ZzRscmh0&utm_source=qr" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </a>
+        <p style={{ marginTop: '1.5rem' }}>Follow Nebula for more information and updates:</p>
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/company/nebula-software-technology/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://x.com/nebulatechspace" target="_blank" rel="noopener noreferrer">
+            <BsTwitterX />
+          </a>
+          <a href="https://www.tiktok.com/@nebula.software.company?_t=8oxBiAZJfAt&_r=1" target="_blank" rel="noopener noreferrer">
+            <FaTiktok />
+          </a>
+          <a href="https://www.facebook.com/share/4z39Hw2UkzYcWzyQ/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+            <FaFacebook />
+          </a>
+          <a href="https://www.instagram.com/nebula.software.solutions?igsh=OHR3enJ5ZzRscmh0&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
