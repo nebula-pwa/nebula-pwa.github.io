@@ -26,6 +26,7 @@ nebula-tech-hub.github.io/
 │   │   ├── AboutPage.js
 │   │   ├── ContactPage.js
 │   │   ├── CookieConsent.js
+│   │   ├── Footer.js
 │   │   ├── HomePage.js
 │   │   ├── HowToInstallPage.js
 │   │   ├── Navbar.js
@@ -37,6 +38,7 @@ nebula-tech-hub.github.io/
 │   │   ├── App.css
 │   │   ├── ContactPage.css
 │   │   ├── CookieConsent.css
+│   │   ├── Footer.css
 │   │   ├── HomePage.css
 │   │   ├── HowToInstallPage.css
 │   │   ├── index.css
