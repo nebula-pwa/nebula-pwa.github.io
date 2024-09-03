@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomeToInstallPage from './components/HowToInstallPage';
 import PolicyPage from './components/PolicyPage';
-import HomePage from './components/HomePage';
+import HomePage from './components/HomePage2';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import NotFound from './components/NotFound';
@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="app-container">
       {!consentGiven && <CookieConsent onConsent={() => setConsentGiven(true)} />}
       
       
@@ -43,7 +43,7 @@ function App() {
       </div>
 
       <Footer /> {/* Add the Footer component here */}
-    </>
+    </div>
   );
 }
 

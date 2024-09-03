@@ -9,18 +9,23 @@ nebula-tech-hub.github.io/
 │   ├── robots.txt
 ├── src/
 │   ├── assets/
+│   │   ├── filter_infographic.png
 │   │   ├── infographic.jpg
 │   │   ├── iphone_step1.jpg
 │   │   ├── iphone_step2.jpg
 │   │   ├── iphone_step3.jpg
 │   │   ├── iphone_step4.jpg
 │   │   ├── iphone_steps.jpg
+│   │   ├── like_infographic.png
+│   │   ├── list_infographic.png
+│   │   ├── message_infographic.png
 │   │   ├── nebula_logo.png
 │   │   ├── nebula-galaxy.png
 │   │   ├── nebula.ico
 │   │   ├── nebula.jpg
 │   │   ├── nebulaLogo.png
 │   │   ├── nebulaqrcode.png
+│   │   ├── search_infographic.png
 │   │   ├── small-nebula-galaxy.jpg
 │   ├── components/
 │   │   ├── AboutPage.js
