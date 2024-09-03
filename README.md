@@ -30,37 +30,68 @@ Here's a little overview of the project's folder structure:
 
 ```
 nebula-tech-hub.github.io/
-├── .git/                      # Git repository
-├── node_modules/              # Node.js modules
-├── public/                    # Public assets and HTML files
-│   ├── assets/                # Static assets (images, icons)
-│   │   ├── favicon.ico
-│   │   ├── logo192.png
-│   │   ├── logo512.png
-│   ├── index.html             # Main HTML file
-│   ├── manifest.json          # PWA manifest
-│   ├── robots.txt             # Robots.txt file
-├── src/                       # Source files for React components and styles
-│   ├── components/            # React components
-│   │   ├── Navbar.js
-│   │   ├── HomePage.js
+├── .git/
+├── node_modules/
+├── public/
+│   ├── 404.html
+│   ├── structure.txt
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+├── src/
+│   ├── assets/
+│   │   ├── filter_infographic.png
+│   │   ├── infographic.jpg
+│   │   ├── iphone_step1.jpg
+│   │   ├── iphone_step2.jpg
+│   │   ├── iphone_step3.jpg
+│   │   ├── iphone_step4.jpg
+│   │   ├── iphone_steps.jpg
+│   │   ├── like_infographic.png
+│   │   ├── list_infographic.png
+│   │   ├── message_infographic.png
+│   │   ├── nebula_logo.png
+│   │   ├── nebula-galaxy.png
+│   │   ├── nebula.ico
+│   │   ├── nebula.jpg
+│   │   ├── nebulaLogo.png
+│   │   ├── nebulaqrcode.png
+│   │   ├── search_infographic.png
+│   │   ├── small-nebula-galaxy.jpg
+│   ├── components/
 │   │   ├── AboutPage.js
-│   ├── styles/                # CSS stylesheets
-│   │   ├── Navbar.css
-│   │   ├── HomePage.css
+│   │   ├── ContactPage.js
+│   │   ├── CookieConsent.js
+│   │   ├── Footer.js
+│   │   ├── HomePage.js
+│   │   ├── HowToInstallPage.js
+│   │   ├── Navbar.js
+│   │   ├── NebulaBackground.js
+│   │   ├── NotFound.js
+│   │   ├── PolicyPage.js
+│   ├── styles/
 │   │   ├── AboutPage.css
 │   │   ├── App.css
+│   │   ├── ContactPage.css
+│   │   ├── CookieConsent.css
+│   │   ├── Footer.css
+│   │   ├── HomePage.css
+│   │   ├── HowToInstallPage.css
 │   │   ├── index.css
-│   ├── App.test.js            # Unit tests
-│   ├── App.js                 # Main App component
-│   ├── index.js               # Entry point for React
-│   ├── logo.svg               # Logo used in the app
-│   ├── reportWebVitals.js     # Web vitals reporting
-│   ├── setupTests.js          # Setup for unit tests
-├── .gitignore                 # Files to be ignored by Git
-├── package-lock.json          # Lock file for dependencies
-├── package.json               # Project metadata and scripts
-├── README.md                  # Project documentation (this file)
+│   │   ├── Navbar.css
+│   │   ├── NebulaBackground.css
+│   │   ├── PolicyPage.css
+│   ├── App.test.js
+│   ├── App.js
+│   ├── firebaseConfig.js
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
 ```
 
 ## Installation
