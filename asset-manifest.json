@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.036424d2.css",
-    "main.js": "/static/js/main.9279ddad.js",
+    "main.js": "/static/js/main.fcb439d6.js",
     "static/media/iphone_step1.jpg": "/static/media/iphone_step1.9e10a9875b24a704641c.jpg",
     "static/media/iphone_step2.jpg": "/static/media/iphone_step2.c321f57740220b1eb0e8.jpg",
     "static/media/infographic.jpg": "/static/media/infographic.1b225878a263823de4c1.jpg",
@@ -11,18 +11,18 @@
     "static/media/message_infographic.png": "/static/media/message_infographic.662a438b94c72744b2d8.png",
     "static/media/filter_infographic.png": "/static/media/filter_infographic.68938e0a65bb5350bb12.png",
     "static/media/search_infographic.png": "/static/media/search_infographic.b74f479018f5ce104b9a.png",
+    "static/media/save_infographic.png": "/static/media/save_infographic.a7cbaf3d0f9df218416e.png",
     "static/media/list_infographic.png": "/static/media/list_infographic.41bc25cc814e8ff5f4c9.png",
-    "static/media/like_infographic.png": "/static/media/like_infographic.54e50992d6b8133ac4cd.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.036424d2.css.map": "/static/css/main.036424d2.css.map",
-    "main.9279ddad.js.map": "/static/js/main.9279ddad.js.map"
+    "main.fcb439d6.js.map": "/static/js/main.fcb439d6.js.map"
   },
   "entrypoints": [
     "static/css/main.036424d2.css",
-    "static/js/main.9279ddad.js"
+    "static/js/main.fcb439d6.js"
   ]
 }

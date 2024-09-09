@@ -25,6 +25,7 @@ nebula-tech-hub.github.io/
 │   │   ├── nebula.jpg
 │   │   ├── nebulaLogo.png
 │   │   ├── nebulaqrcode.png
+│   │   ├── save_infographic.png
 │   │   ├── search_infographic.png
 │   │   ├── small-nebula-galaxy.jpg
 │   ├── components/
