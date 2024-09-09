@@ -3,12 +3,12 @@
   "name": "Nebula PWA Info",
   "icons": [
     {
-      "src": "../src/assets/nebula_logo.png",
+      "src": "/nebula_logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "../src/assets/nebula_logo.png",
+      "src": "/nebula_logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
