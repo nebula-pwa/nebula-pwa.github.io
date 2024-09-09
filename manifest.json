@@ -1,14 +1,14 @@
 {
-  "short_name": "Nebula PWA Info Site",
-  "name": "Nebula PWA Info Site",
+  "short_name": "Nebula PWA Info",
+  "name": "Nebula PWA Info",
   "icons": [
     {
-      "src": "/src/assets/nebula_logo.png",
+      "src": "../src/assets/nebula_logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/src/assets/nebula_logo.png",
+      "src": "../src/assets/nebula_logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
