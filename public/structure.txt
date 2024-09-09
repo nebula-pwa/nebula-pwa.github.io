@@ -6,6 +6,8 @@ nebula-tech-hub.github.io/
 │   ├── structure.txt
 │   ├── index.html
 │   ├── manifest.json
+│   ├── nebula_logo.png
+│   ├── nebula.ico
 │   ├── robots.txt
 ├── src/
 │   ├── assets/
