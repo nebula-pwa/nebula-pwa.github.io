@@ -51,10 +51,15 @@
   margin-right: 5px;
 }
 
-/* Adding a margin between the About and Contact links */
 .navbar-menu a {
   color: white; /* Set the font color to white */
   margin-right: 20px; /* Add space between the links */
+  text-decoration: none; /* Remove the underline */
+}
+
+.navbar-menu a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: rgb(125, 14, 222)/* Change to your desired hover color */
 }
 
 .navbar-menu a:last-child {

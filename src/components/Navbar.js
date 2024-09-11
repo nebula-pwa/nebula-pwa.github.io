@@ -5,6 +5,10 @@ import { GrClose } from "react-icons/gr";
 import { MdInstallMobile } from "react-icons/md";
 import '../styles/Navbar.css';
 import logo from '../assets/nebula_logo.png';
+import { logEvent } from 'firebase/analytics';
+import { analytics } from '../firebaseConfig';
+import { addDoc, collection } from 'firebase/firestore'; // Firestore imports
+import { db } from '../firebaseConfig'; // Firestore database
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +25,7 @@ const Navbar = () => {
     if (isOpen) {
       timer = setTimeout(() => {
         setIsOpen(false);
-      }, 20000); // 20 seconds
+      }, 15000);
     }
     return () => clearTimeout(timer);
   }, [isOpen]);
@@ -45,11 +49,28 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
 
+  const handleNavClick = async (pageName) => {
+    logEvent(analytics, 'navbar_click', { page: pageName });
+    console.log(`Navbar clicked: ${pageName}`);
+
+    // Log the click event to Firestore
+    const timestamp = new Date();
+    try {
+      await addDoc(collection(db, 'userActivity'), {
+        event: `Navbar Clicked: ${pageName}`,
+        timestamp
+      });
+      console.log('Navigation activity logged successfully to Firestore.');
+    } catch (error) {
+      console.error('Error logging navigation activity to Firestore:', error);
+    }
+  };
+
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="navbar-right">
         <div className="navbar-logo-container">
-          <Link to="/">
+          <Link to="/" onClick={() => handleNavClick('Home')}>
             <img src={logo} alt="Logo" className="navbar-logo" />
           </Link>
         </div>
@@ -58,24 +79,23 @@ const Navbar = () => {
         <div className="hamburger">
           <span></span>
           <span></span>
-          <span></span>
         </div>
         <GrClose className="close-icon" />
       </div>
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-        <Link to="/install" className={isActive('/install') ? 'active' : ''}>
+        <Link to="/install" className={isActive('/install') ? 'active' : ''} onClick={() => handleNavClick('How to Install')}>
           <MdInstallMobile className="icon" />
-          How to Install
+          Install
         </Link>
-        <Link to="/terms" className={isActive('/terms') ? 'active' : ''}>
+        <Link to="/terms" className={isActive('/terms') ? 'active' : ''} onClick={() => handleNavClick('Terms & Privacy Policy')}>
           <FaBook className="icon" />
-          Terms & Privacy Policy
+          Terms
         </Link>
-        <Link to="/about" className={isActive('/about') ? 'active' : ''}>
+        <Link to="/about" className={isActive('/about') ? 'active' : ''} onClick={() => handleNavClick('About')}>
           <FaInfoCircle className="icon" />
           About
         </Link>
-        <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>
+        <Link to="/contact" className={isActive('/contact') ? 'active' : ''} onClick={() => handleNavClick('Contact')}>
           <FaEnvelope className="icon" />
           Contact
         </Link>
