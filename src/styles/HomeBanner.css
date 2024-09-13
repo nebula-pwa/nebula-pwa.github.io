@@ -1,0 +1,58 @@
+.homepage-banner {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    background-image: url('../assets/nebula-galaxy.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    opacity: 1; /* Make the background slightly transparent */
+    margin-bottom: 20px; /* Ensure no margin around the banner */
+    padding: 0; /* Ensure no padding around the banner */
+}
+
+.homepage-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust this value to control the height of the gradient */
+    background: linear-gradient(to bottom, #5010b113 0%, #060126f7 100%);
+    z-index: 1; /* Make sure the gradient is on top of the background */
+}
+
+.homepage-banner h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    color: white;
+    margin: 0; /* Ensure no extra margins */
+    text-align: center; /* Center text horizontally */
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-banner {
+        height: 200px;
+    }
+
+    .homepage-banner h1 {
+        font-size: 2rem;
+    }
+}

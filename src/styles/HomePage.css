@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(10deg, #0F044D 10%, #5010b1 80%);
+    background: linear-gradient(8deg,#5010b179 10%,#060126 50%);
     color: #fff;
-    padding: 20px;
+    /* padding: 20px; */
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@
     max-width: 800px;
     width: 100%;
     margin-bottom: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
     box-sizing: border-box;
 }
 
@@ -214,5 +214,9 @@ p {
         font-size: 0.8rem; /* Adjusted font size for mobile */
         line-height: 1.2; /* Ensure line height is appropriate */
         text-align: center; /* Center text */
+    }
+
+    .carousel-container {
+        padding: 20px;
     }
 }

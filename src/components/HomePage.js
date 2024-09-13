@@ -16,6 +16,8 @@ import { db } from '../firebaseConfig';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 
+import Banner from '../components/HomeBanner.js'; // Import the Banner component
+
 function HomePage() {
   const sliderRef = useRef(null);
 
@@ -91,6 +93,10 @@ function HomePage() {
   return (
     <div className="homepage">
       <NebulaBackground />
+
+      {/* Banner is rendered here */}
+      <Banner />
+      
       <div className="carousel-container">
         <Slider 
           ref={sliderRef} 
