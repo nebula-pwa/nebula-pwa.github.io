@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.10af50d7.css",
+    "main.css": "/static/css/main.d66abbb8.css",
     "main.js": "/static/js/main.ad52b37a.js",
     "static/media/nebula-galaxy.png": "/static/media/nebula-galaxy.f617bb6379a4bdb36428.png",
     "static/media/iphone_step1.jpg": "/static/media/iphone_step1.9e10a9875b24a704641c.jpg",
@@ -19,11 +19,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.10af50d7.css.map": "/static/css/main.10af50d7.css.map",
+    "main.d66abbb8.css.map": "/static/css/main.d66abbb8.css.map",
     "main.ad52b37a.js.map": "/static/js/main.ad52b37a.js.map"
   },
   "entrypoints": [
-    "static/css/main.10af50d7.css",
+    "static/css/main.d66abbb8.css",
     "static/js/main.ad52b37a.js"
   ]
 }
