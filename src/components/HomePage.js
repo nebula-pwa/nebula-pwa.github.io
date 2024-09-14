@@ -108,7 +108,7 @@ function HomePage() {
             <div className="carousel-content first-card">
               <img src={NebulaLogo} alt="Nebula Logo" className="first-card-image" />
               <div className="overlay">
-                <h1>Welcome to Nebula PWA's Information Portal</h1>
+                <h1>Nebula's PWA</h1>
                 <p>
                   Nebula Progressive Web App (PWA) is your gateway to your new place. Revolutionizing the way you search for rental housing.
                   Our progressive web app is designed to streamline the process of finding and securing your next home. 
