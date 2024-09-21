@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/PolicyPage.css';
+
+import lastModifiedData from '../lastModifiedDate.json';
 
 import NebulaBackground from '../components/NebulaBackground';
 
 const PolicyPage = () => {
 
-  // Get the current date
-  const currentDate = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const [lastModifiedDate, setLastModifiedDate] = useState('');
+
+  useEffect(() => {
+    setLastModifiedDate(lastModifiedData.lastModifiedDate);
+  }, []);
 
   return (
     <div className="policypage">
@@ -20,7 +21,7 @@ const PolicyPage = () => {
         
         <section>
           <h2>Effective Date</h2>
-          <p>{currentDate}</p>
+          <p>{lastModifiedDate}</p>
         </section>
 
         <section>
@@ -123,7 +124,7 @@ const PolicyPage = () => {
                 <li><strong>Service Provision:</strong> We use your information to provide, maintain, and improve our services, including processing transactions and delivering customer support.</li>
                 <li><strong>Personalization:</strong> We use your information to personalize your experience, including customizing content and recommendations.</li>
                 <li><strong>Communication:</strong> We use your contact information to send newsletters, promotional materials, and respond to inquiries. You can opt-out of promotional communications at any time.</li>
-                <li><strong>Analytics:</strong> We use data analytics to understand usage patterns and improve our services.</li>
+                <li><strong>Analytics:</strong> We use data analytics to better understand usage patterns and improve our services.</li>
                 <li><strong>Legal Compliance:</strong> We may use your information to comply with legal obligations, enforce our policies, and protect our rights.</li>
               </ul>
             </li>
