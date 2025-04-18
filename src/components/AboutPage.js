@@ -11,7 +11,7 @@ const AboutPage = () => {
         <h1>About Us</h1>
         <h2>Transforming the Rental Experience</h2>
         <p>
-        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> was born out of the need to combat a saturated rental market that was built without renters in mind.
+        <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> was born out of the need to combat a saturated rental market that was built without renters in mind.
           Many platforms prioritize large-scale operations, leaving small landlords and renters—especially college students—struggling with complicated, expensive processes. 
           Nebula changes that by focusing on simplicity, affordability, and efficiency. 
           Our mission is to make the rental process easier for everyone, whether you're listing a property or searching for the perfect room.
@@ -46,7 +46,7 @@ const AboutPage = () => {
 
         <h2>Why Nebula PWA?</h2>
         <p>
-        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> offers a powerful, 
+        <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> offers a powerful, 
           user-friendly platform for rental housing searches. 
           Unlike traditional rental platforms, Nebula is designed to cater to landlords and specially renters, 
           providing a cost-effective and simple solution for listing and finding properties. 

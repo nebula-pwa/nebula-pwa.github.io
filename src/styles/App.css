@@ -15,8 +15,8 @@ html, body {
   box-sizing: border-box; /* Ensure padding is included in the element's total width */
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 body {

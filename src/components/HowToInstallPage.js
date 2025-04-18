@@ -4,7 +4,7 @@ import iphone_step1 from '../assets/iphone_step1.jpg';
 import iphone_step2 from '../assets/iphone_step2.jpg';
 import iphone_step3 from '../assets/iphone_step3.jpg';
 import iphone_step4 from '../assets/iphone_step4.jpg';
-import nebulaqrcode from '../assets/nebulaqrcode.png';
+import nebulaqrcode from '../assets/nebulaqrcode.jpeg';
 
 import NebulaBackground from '../components/NebulaBackground';
 
@@ -26,7 +26,7 @@ const HowToInstallPage = () => {
         </p>
         <h2>How to Install Nebula PWA on Your Device?</h2>
         <p>
-        Installing <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> on your device is a simple process that varies slightly depending on your device and operating system.
+        Installing <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> on your device is a simple process that varies slightly depending on your device and operating system.
         </p>
           
         <h2>Installing Nebula PWA on iOS</h2>
@@ -35,7 +35,7 @@ const HowToInstallPage = () => {
         </p>
         <ul>
           <li>Open the Safari web browser on your iOS mobile device.</li>
-          <li>Visit <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> or scan the QR code below with your mobile device.</li>
+          <li>Visit <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> or scan the QR code below with your mobile device.</li>
           <li>Once the website loads, tap the Share button at the bottom center of the screen. It resembles a square with an arrow pointing upwards.</li>
           <figure className="image-container">
             <img src={iphone_step1} alt="iphone_step1" className="image" />
@@ -82,7 +82,7 @@ const HowToInstallPage = () => {
         </ul>
         
         <p>
-          To get started, you can either visit the <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> directly on your mobile device or scan the QR code below with your smartphone.
+          To get started, you can either visit the <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA site</a> directly on your mobile device or scan the QR code below with your smartphone.
         </p>
         <figure className="image-container">
           <img src={nebulaqrcode} alt="nebulaqrcode" className="image" />

@@ -120,7 +120,7 @@ function HomePage() {
           {[
             { img: searchImg, alt: "Search Infographic", title: "Search", text: "Users can explore a variety of listings and view them on a list or a map for convenient location-based browsing." },
             { img: filterImg, alt: "Filter Infographic", title: "Filter", text: "Nebula PWA offers tailored search options, including price, pet-friendly, room type, and much more for users to find their ideal match." },
-            { img: messageImg, alt: "Message Infographic", title: "Message", text: "Nebula streamlines communication between users and listing owners for inquiries and more details." },
+            { img: messageImg, alt: "Message Infographic", title: "Message", text: "Nebula PWA streamlines communication between users and listing owners for inquiries and more details." },
             { img: saveImg, alt: "Like Infographic", title: "Save", text: "Users can save rooms, apartments, and properties, helping them narrow down options and keep track of preferred properties for future reference." },
             { img: listImg, alt: "List Infographic", title: "List", text: "Users can easily create a listing to sell their contract or advertise a place they want to rent out." }
           ].map((slide, index) => (

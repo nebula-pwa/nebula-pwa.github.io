@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaInfoCircle, FaEnvelope, FaBook } from 'react-icons/fa';
 import { GrClose } from "react-icons/gr";
@@ -14,7 +14,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const location = useLocation();
-  let lastScrollY = 0;
+  const lastScrollY = useRef(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -35,12 +35,12 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY < 10) {
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY) {
+      } else if (currentScrollY > lastScrollY.current) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
-      lastScrollY = currentScrollY;
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });

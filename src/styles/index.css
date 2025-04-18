@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: 'Righteous', sans-serif;
   background: linear-gradient(180deg, rgb(0, 16, 46) 48%, rgb(132, 53, 142) 97.8%);
-  color: white;
+  color: rgba(0, 16, 46, 0.849);
   min-height: 100vh;
   display: flex;
   flex-direction: column; /* Flex container to align content */
@@ -27,7 +27,7 @@ body {
 
 /* Style the header */
 header {
-  color: #fff;
+  color: rgba(0, 16, 46, 0.849);
   padding: 20px 0;
   text-align: center;
 }
@@ -41,7 +41,7 @@ header h1 {
 footer {
   flex-shrink: 0;
   background: #3e0194;
-  color: #fff;
+  color: rgba(0, 16, 46, 0.849);
   padding: 10px 0;
   text-align: center;
   margin-top: auto; /* Pushes the footer to the bottom in a flex container */
