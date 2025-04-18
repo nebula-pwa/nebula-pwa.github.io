@@ -4,7 +4,7 @@ import { FaInfoCircle, FaEnvelope, FaBook } from 'react-icons/fa';
 import { GrClose } from "react-icons/gr";
 import { MdInstallMobile } from "react-icons/md";
 import '../styles/Navbar.css';
-import logo from '../assets/nebula_logo.png';
+import logo from '../assets/nebula_pwa.png';
 import { logEvent } from 'firebase/analytics';
 import { analytics } from '../firebaseConfig';
 import { addDoc, collection } from 'firebase/firestore'; // Firestore imports
