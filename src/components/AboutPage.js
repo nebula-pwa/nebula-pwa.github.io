@@ -8,7 +8,7 @@ const AboutPage = () => {
     <div className="aboutpage">
       <NebulaBackground /> {/* Nebula background should be behind everything */}
       <div className="content">
-        <h1>About Us</h1>
+        <h1>About Nebula's PWA</h1>
         <h2>Transforming the Rental Experience</h2>
         <p>
         <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">Nebula PWA</a> was born out of the need to combat a saturated rental market that was built without renters in mind.
