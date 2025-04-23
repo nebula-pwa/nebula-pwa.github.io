@@ -139,7 +139,7 @@ function HomePage() {
 
       <div className="content">
         <p>Explore Nebula PWA to find your perfect home.</p>
-        <a href="https://nebula-topaz-seven.vercel.app/home" target="_blank" rel="noopener noreferrer">
+        <a href="https://nebula-cosmorent.vercel.app/home" target="_blank" rel="noopener noreferrer">
           <button className="cta-button" onClick={() => handleButtonClick('Download The App')}>Download The App</button>
         </a>
       </div>
