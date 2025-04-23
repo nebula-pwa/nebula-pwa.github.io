@@ -136,14 +136,14 @@ p {
 
 
 
-.carousel-container.slick-dots li button:before {
-    font-size: 12px;
-    color: #fff; /* Default color for dots */
+.carousel-container .slick-dots li button:before {
+    font-size: 8px;
+    color: #ffffffcb; /* Default color for dots */
     opacity: 0.5; /* Default opacity for non-active dots */
 }
 
 .carousel-container .slick-dots li.slick-active button:before {
-    color: #fff; /* White color for the active dot */
+    color: #c280f8; /* White color for the active dot */
     opacity: 1; /* Full opacity for the active dot */
 }
 
