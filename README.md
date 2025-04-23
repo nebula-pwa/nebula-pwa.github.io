@@ -1,6 +1,6 @@
 # Nebula PWA Web
 
-This repository contains the source code for the `nebula-info-web` project, a web site built with React. This site is to provide information about Nebula PWA. This is designed to be responsive, elegant, and up-to-date with the latest web development trends. This project is deployed on GitHub Pages.
+This repository contains the source code for the `nebula-pwa-info-web` project, a web site built with React. This site is to provide information about Nebula PWA. This is designed to be responsive, elegant, and up-to-date with the latest web development trends. This project is deployed on GitHub Pages.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ This repository contains the source code for the `nebula-info-web` project, a we
 
 ## Project Overview
 
-`nebula-info-web` is a modern PWA that includes multiple pages, a responsive navbar, and customizable components. The goal is to create a seamless user experience across different devices while leveraging the latest web technologies.
+`nebula-pwa-info-web` is a modern PWA that includes multiple pages, a responsive navbar, and customizable components. The goal is to create a seamless user experience across different devices while leveraging the latest web technologies.
 
 **Features:**
 - Responsive design with mobile-friendly navigation
@@ -29,7 +29,7 @@ This repository contains the source code for the `nebula-info-web` project, a we
 Here's a little overview of the project's folder structure:
 
 ```
-nebula-tech-hub.github.io/
+nebula-pwa.github.io/
 ├── .git/
 ├── node_modules/
 ├── public/
@@ -172,7 +172,7 @@ Deploying to GitHub Pages involves a few steps:
    npm run deploy
    ```
 
-   This command will create or update the `gh-pages` branch in your repository and push the built files there. Your site should be live at `https://nebula-tech-hub.github.io/`.
+   This command will create or update the `gh-pages` branch in your repository and push the built files there. Your site should be live at `https://nebula-pwa.github.io/`.
 
 ## Customizing the App
 
